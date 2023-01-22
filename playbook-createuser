@@ -1,11 +1,1 @@
----
-- name: create user
-  hosts: all
-  gather_facts: true
-  become: true		
-  tasks:
-    - name: create user
-      register: createuser
-      command: "useradd triasansible"
-    - debug:
-        var: createuser.stdout_lines
+useradd triasansible
